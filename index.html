@@ -31,17 +31,87 @@ function multiSearch(){
 	}
 }
 </script>
-
-	<div>
-	<form method="get" action="" onsubmit="return false">
-		
+<form method="get" action="" onsubmit="return false">
+<div>
 	<input type="text" name="q" id="q"><input type="submit" value="→" onclick="multiSearch()"><br>
+	<input type="checkbox" name="searcher" value="google-wen.lu" checked>http://www.wen.lu/#q=%s
 	<input type="checkbox" name="searcher" value="cn.bing" checked>http://cn.bing.com/search?q=%s
 	<input type="checkbox" name="searcher" value="google">https://www.google.com/search?q=%s
 	<input type="checkbox" name="searcher" value="360so" checked>https://www.so.com/s?q=%s
-	</form>
-	</div>
+	<input type="checkbox" name="searcher" value="yandex" checked>https://yandex.ru/search/?text=%s
+	<input type="checkbox" name="searcher" value="dict.bing" checked>http://dict.bing.com/#%s
+</div>
 
+<details>
+	<summary>购物</summary>
+	<div>
+<input type="checkbox" name="searcher" value="jd">http://search.jd.com/Search?keyword=%s&enc=utf-8
+<input type="checkbox" name="searcher" value="taobao">http://s.taobao.com/search?q=%s
+<input type="checkbox" name="searcher" value="amazon.cn">http://www.amazon.cn/s/?field-keywords=%s
+<input type="checkbox" name="searcher" value="amazon">http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=%s
+	</div>
+</details>
+<details>
+	<summary>种子</summary>
+	<div>
+<input type="checkbox" name="searcher" value="snsoso">http://snsoso.com/l/%s/1/
+	</div>
+</details>
+<details>
+	<summary>图片视频音乐</summary>
+	<div>
+<input type="checkbox" name="searcher" value="images.google">http://images.google.com/search?newwindow=1&safe=strict&site=&tbm=isch&source=hp&q=%s
+<input type="checkbox" name="searcher" value="images.bing">http://bing.com/images/search?q=%s&go=&qs=IM&form=QBIR
+<input type="checkbox" name="searcher" value="image.baidu">http://image.baidu.com/i?tn=baiduimage&ie=utf-8&word=%s
+<input type="checkbox" name="searcher" value="youtube">https://www.youtube.com/results?search_query=%s&utm_source=opensearch
+<input type="checkbox" name="searcher" value="music.baidu">http://music.baidu.com/search?key=%s
+</div>
+</details>	
+
+<details>
+	<summary>词典</summary>
+	<div>
+<input type="checkbox" name="searcher" value="ldoceonline">http://www.ldoceonline.com/search/?q=%s
+	</div>
+</details>
+
+<details>
+	<summary>软件</summary>
+	<div>
+<input type="checkbox" name="searcher" value="apkpure">https://apkpure.com/search?q=%s
+<input type="checkbox" name="searcher" value="apkleecher">http://apkleecher.com/?id=%s
+<input type="checkbox" name="searcher" value="github">https://github.com/search?utf8=✓&q=%s
+<input type="checkbox" name="searcher" value="sf">http://sourceforge.net/directory/?q=%s
+	</div>
+</details>
+
+<details>
+	<summary>百科</summary>
+	<div>
+<input type="checkbox" name="searcher" value="wikipedia">http://en.wikipedia.org/w/index.php?title=Special:Search&search=%s
+<input type="checkbox" name="searcher" value="alexa">http://www.alexa.com/siteinfo?q=%s
+	</div>
+</details>
+
+<details>
+	<summary>Google</summary>
+	<div>
+<input type="checkbox" name="searcher" value="google.gr" >https://www.google.gr/search?q=%s
+<input type="checkbox" name="searcher" value="icanopen">http://icanopen.com/search.php?word=%s
+<input type="checkbox" name="searcher" value="ggg.eeload">https://ggg.eeload.com/#newwindow=1&q=dgh
+	</div>
+</details>
+<details>
+	<summary>学术</summary>
+	<div>
+<input type="checkbox" name="searcher" value="xs.glgoo">https://xs.glgoo.com/scholar?hl=zh-CN&q=%s
+<input type="checkbox" name="searcher" value="bing-academic">http://bing.com/academic/search?q=%s
+<input type="checkbox" name="searcher" value="xueshu.baidu">http://xueshu.baidu.com/s?wd=%s
+<input type="checkbox" name="searcher" value="wolframalpha" >http://www.wolframalpha.com/input/?i=%s
+	</div>
+</details>
+
+</form>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
